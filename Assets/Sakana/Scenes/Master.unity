@@ -5265,7 +5265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57999d1b126731a4ba4eb4aa79d9a906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: a3ee254c1cef5704bbe76f0ecf7ad71d, type: 2}
 --- !u!114 &1319767020
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -62,8 +62,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DiffMag: 8.09
-    - _DiffX: -0.0032674186
-    - _DiffY: -0.02872575
+    - _DiffX: 0.0038018636
+    - _DiffY: -0.037512757
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
