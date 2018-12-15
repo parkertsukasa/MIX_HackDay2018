@@ -9,7 +9,7 @@ public class SoundButton : MonoBehaviour
 
 	private AudioSource audioSource;
 
-	private AudioClip clip;
+	public AudioClip clip;
 
 	private SoundDataManager dataManager;
 
@@ -29,7 +29,6 @@ public class SoundButton : MonoBehaviour
 
 	public void ButtonPressed()
 	{
-		clip = dataManager.selectedSounds[soundID];
 		audioSource.PlayOneShot(clip);
 		dataManager.nowPressed = soundID;
 	}
