@@ -18,8 +18,6 @@
 // 	  IN THE SOFTWARE.
 //
 
-/* 
-
 using UnityEngine;
 using UnityEditor;
 using UnityOSC;
@@ -139,4 +137,3 @@ public class OSCHelper : EditorWindow
 	}
 }
 
-*/
