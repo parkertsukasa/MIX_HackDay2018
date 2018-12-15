@@ -8,6 +8,8 @@ public class EffectMenuManager : MonoBehaviour
 	[SerializeField]
 	private Canvas effectCanvas;
 	[SerializeField]
+	private Animator menuBackAnimator;
+	[SerializeField]
 	private Canvas soundCanvas;
 
 	// Use this for initialization
@@ -15,6 +17,7 @@ public class EffectMenuManager : MonoBehaviour
 	{
 		effectCanvas.enabled = false;
 		soundCanvas.enabled = true;
+		menuBackAnimator.SetBool("MenuEnabled", false);
 	}
 	
 	// Update is called once per frame
@@ -25,8 +28,21 @@ public class EffectMenuManager : MonoBehaviour
 
 	public void EffectMenuButton()
 	{
-		effectCanvas.enabled = !effectCanvas.enabled;
-		soundCanvas.enabled = !soundCanvas.enabled;
+		if (effectCanvas.enabled == true) // すでにMenuが出ている時
+		{
+			menuBackAnimator.SetBool("MenuEnabled", false);
+			Invoke("EffectMenuOut", 1.0f);
+		}
+		else // Menuが出ていない時
+		{
+			effectCanvas.enabled = true;
+			menuBackAnimator.SetBool("MenuEnabled", true);
+		}
+	}
+
+	void EffectMenuOut()
+	{
+		effectCanvas.enabled = false;// !effectCanvas.enabled;
 	}
 
 }

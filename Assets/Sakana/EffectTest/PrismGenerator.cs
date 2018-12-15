@@ -20,7 +20,7 @@ public class PrismGenerator : MonoBehaviour {
 	}
 	
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.A) || dataManager.nowPressed == 9) {
+        if (Input.GetKeyDown(KeyCode.A) || dataManager.nowPressed == 9 || dataManager.nowPressed == 11) {
             for (int i = 0; i < num; i++) {
                 Prisms[i] = Instantiate(Prism);
                 Prisms[i].transform.position = Random.insideUnitSphere * 1.0f;

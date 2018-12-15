@@ -19,7 +19,7 @@ public class BoxGenerator : MonoBehaviour {
 	}
 	
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.S) || dataManager.nowPressed == 8) {
+        if (Input.GetKeyDown(KeyCode.S) || dataManager.nowPressed == 8 || dataManager.nowPressed == 10) {
             for (int i = 0; i < num; i++) {
                 Prisms[i] = Instantiate(Prism);
                 Prisms[i].transform.position = Random.insideUnitSphere * 1.0f;
